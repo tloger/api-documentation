@@ -1,4 +1,4 @@
 TLOGER API Documentation
 ========
 
-API Documentation(http://tloger.github.io/api-documentation/)
+<a target="_blank" href="http://tloger.github.io/api-documentation/">API Documentation</a>
