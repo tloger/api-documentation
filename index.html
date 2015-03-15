@@ -26,7 +26,9 @@
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <center>
+        <img src="https://avatars3.githubusercontent.com/u/10524061?v=3&amp;s=200" />
+      </center>
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
         </div>
@@ -42,13 +44,11 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="http://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>TLOGER API Documentation</p>
 
           <h1 id="clients">Clients</h1>
+
+<h2 id="get-all-clients">Get All Clients</h2>
 <pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/clients"</span>
 </code></pre>
 
@@ -116,6 +116,24 @@
 
 <p><code class="prettyprint">GET https://tloger-esq.herokuapp.com/api/clients/1</code></p>
 
+<h2 id="save-client">Save Client</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/clients"</span>
+</code></pre>
+
+<p>This endpoint is used to save the client.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://tloger-esq.herokuapp.com/api/clients</code></p>
+
+<h2 id="delete-client">Delete Client</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/clients/1"</span>
+</code></pre>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://tloger-esq.herokuapp.com/api/clients/1</code></p>
+
 <h3 id="url-parameters">URL Parameters</h3>
 
 <table><thead>
@@ -126,7 +144,7 @@
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>The ID of the client to retrieve</td>
+<td>The ID of the client to delete</td>
 </tr>
 </tbody></table>
 
@@ -212,6 +230,38 @@
 </tr>
 </tbody></table>
 
+<h2 id="save-project">Save Project</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/projects"</span>
+</code></pre>
+
+<p>This endpoint is used to save the project.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://tloger-esq.herokuapp.com/api/projects</code></p>
+
+<h2 id="delete-project">Delete Project</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/projects/1"</span>
+</code></pre>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://tloger-esq.herokuapp.com/api/projects/1</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the project to delete</td>
+</tr>
+</tbody></table>
+
           <h1 id="tasks">Tasks</h1>
 
 <h2 id="get-all-tasks">Get All Tasks</h2>
@@ -289,6 +339,38 @@
 </tr>
 </tbody></table>
 
+<h2 id="save-task">Save Task</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/tasks"</span>
+</code></pre>
+
+<p>This endpoint is used to save the task.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://tloger-esq.herokuapp.com/api/tasks</code></p>
+
+<h2 id="delete-task">Delete Task</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/tasks/1"</span>
+</code></pre>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://tloger-esq.herokuapp.com/api/tasks/1</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the task to delete</td>
+</tr>
+</tbody></table>
+
           <h1 id="tasklogs">Tasklogs</h1>
 
 <h2 id="get-all-tasklogs">Get All Tasklogs</h2>
@@ -342,6 +424,38 @@
 <tr>
 <td>ID</td>
 <td>The ID of the tasklog to retrieve</td>
+</tr>
+</tbody></table>
+
+<h2 id="save-tasklogs">Save TaskLogs</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/tasklogs"</span>
+</code></pre>
+
+<p>This endpoint is used to save the tasklog.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://tloger-esq.herokuapp.com/api/tasklogs</code></p>
+
+<h2 id="delete-tasklog">Delete Tasklog</h2>
+<pre><code class="highlight shell">curl <span class="s2">"https://tloger-esq.herokuapp.com/api/tasklogs/1"</span>
+</code></pre>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://tloger-esq.herokuapp.com/api/tasklogs/1</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the tasklog to delete</td>
 </tr>
 </tbody></table>
 
