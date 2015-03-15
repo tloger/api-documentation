@@ -71,3 +71,31 @@ This endpoint retrieves a single task based on the id passed as parameter.
 Parameter | Description
 --------- | -----------
 ID | The ID of the task to retrieve
+
+## Save Task
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/tasks"
+```
+
+This endpoint is used to save the task.
+
+### HTTP Request
+
+`POST https://tloger-esq.herokuapp.com/api/tasks`
+
+## Delete Task
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/tasks/1"
+```
+
+
+### HTTP Request
+`DELETE https://tloger-esq.herokuapp.com/api/tasks/1`
+
+
+### URL Parameters
+Parameter | Description
+--------- | -----------
+ID | The ID of the task to delete

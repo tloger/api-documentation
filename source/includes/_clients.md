@@ -1,5 +1,7 @@
 # Clients
 
+## Get All Clients
+
 ```shell
 curl "https://tloger-esq.herokuapp.com/api/clients"
 ```
@@ -71,8 +73,31 @@ This endpoint retrieves a single client based on the id passed as parameter.
 
 `GET https://tloger-esq.herokuapp.com/api/clients/1`
 
-### URL Parameters
 
+## Save Client
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/clients"
+```
+
+This endpoint is used to save the client.
+
+### HTTP Request
+
+`POST https://tloger-esq.herokuapp.com/api/clients`
+
+## Delete Client
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/clients/1"
+```
+
+
+### HTTP Request
+`DELETE https://tloger-esq.herokuapp.com/api/clients/1`
+
+
+### URL Parameters
 Parameter | Description
 --------- | -----------
-ID | The ID of the client to retrieve
+ID | The ID of the client to delete

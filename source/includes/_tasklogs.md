@@ -50,3 +50,31 @@ This endpoint retrieves a single tasklog based on the id passed as parameter.
 Parameter | Description
 --------- | -----------
 ID | The ID of the tasklog to retrieve
+
+## Save TaskLogs
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/tasklogs"
+```
+
+This endpoint is used to save the tasklog.
+
+### HTTP Request
+
+`POST https://tloger-esq.herokuapp.com/api/tasklogs`
+
+## Delete Tasklog
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/tasklogs/1"
+```
+
+
+### HTTP Request
+`DELETE https://tloger-esq.herokuapp.com/api/tasklogs/1`
+
+
+### URL Parameters
+Parameter | Description
+--------- | -----------
+ID | The ID of the tasklog to delete

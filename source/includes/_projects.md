@@ -76,3 +76,31 @@ This endpoint retrieves a single project based on the id passed as parameter.
 Parameter | Description
 --------- | -----------
 ID | The ID of the project to retrieve
+
+
+## Save Project
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/projects"
+```
+
+This endpoint is used to save the project.
+
+### HTTP Request
+
+`POST https://tloger-esq.herokuapp.com/api/projects`
+
+## Delete Project
+
+```shell
+curl "https://tloger-esq.herokuapp.com/api/projects/1"
+```
+
+### HTTP Request
+`DELETE https://tloger-esq.herokuapp.com/api/projects/1`
+
+
+### URL Parameters
+Parameter | Description
+--------- | -----------
+ID | The ID of the project to delete
